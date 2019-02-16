@@ -19,6 +19,10 @@ Issues で `優先` タグがあるファイルを優先して翻訳してほし
 - Issue で報告する場合
 - Pull Request を作成する場合
 
+```sh
+git subtree add ja-subtree https://github.com/hugojapan/ja.git --prefix=content/ja
+```
+
 ### 注意事項
 
 - 翻訳サービスの出力をそのまま利用しない。
