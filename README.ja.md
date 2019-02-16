@@ -8,24 +8,31 @@
 - [hugojapan/ja: Hugo documentation Japanese version](https://github.com/hugojapan/ja)
 
 
-## 貢献について
-
-### 翻訳の優先順位
+## 翻訳の優先順位
 
 Issues で `優先` タグがあるファイルを優先して翻訳してほしいです。
 
-### 方法
+
+## 方法
 
 - Issue で報告する場合
 - Pull Request を作成する場合
 
+### 初回
+
 ```sh
+# fork
+git clone --depth=1 https://github.com/hugojapan/hugoDocs.git
+cd hugoDocs
+git fetch origin
+git checkout -b japanese origin/japanese
 git remote add ja-subtree https://github.com/hugojapan/ja.git
 git commit -am "Add remote hugojapan/ja"
 git subtree add --prefix=content/ja --squash ja-subtree master
 ```
 
-### 注意事項
+
+## 注意事項
 
 - 翻訳サービスの出力をそのまま利用しない。
 - 英文以上の情報を追加しない。
