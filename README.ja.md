@@ -21,6 +21,7 @@ Issues で `優先` タグがあるファイルを優先して翻訳してほし
 
 ```sh
 git remote add ja-subtree https://github.com/hugojapan/ja.git
+git commit -am "Add remote hugojapan/ja"
 git subtree add --prefix=content/ja --squash ja-subtree master
 ```
 
