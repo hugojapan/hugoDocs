@@ -20,7 +20,8 @@ Issues で `優先` タグがあるファイルを優先して翻訳してほし
 - Pull Request を作成する場合
 
 ```sh
-git subtree add ja-subtree https://github.com/hugojapan/ja.git --prefix=content/ja
+git remote add ja-subtree https://github.com/hugojapan/ja.git
+git subtree add --prefix=content/ja --squash ja-subtree master
 ```
 
 ### 注意事項
