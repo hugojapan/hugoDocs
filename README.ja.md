@@ -22,7 +22,7 @@ Issues で `優先` タグがあるファイルを優先して翻訳してほし
 
 ```sh
 # fork
-git clone --depth=1 https://github.com/hugojapan/hugoDocs.git
+git clone https://github.com/hugojapan/hugoDocs.git
 cd hugoDocs
 git fetch origin
 git checkout -b japanese origin/japanese
